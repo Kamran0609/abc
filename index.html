@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;}
+    .container{height: 100vh;
+        width: 100vw;
+        background-color: aquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+    .box{ width:30vw;
+    height:30vw;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    animation-name: widthheight;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-direction: alternate-reverse;
+    /* or we could have used shorthand propertty to write All above properties i single line
+    eg: animation: width 10s 2s eas-in-out infinite alternate-reverse */
+   
+   }
+   @keyframes widthheight {
+    from{width: 30vw;
+        height:30vw}
+    to{width: 60vw;
+        height:30vh}
+    }
+    .img{width: 100vw;
+    height: 100vh;
+    background-color:greenyellow ;}
+
+    img{
+    animation: widthheight 10s 2s ease-in-out infinite alternate-reverse}
+</style>
+<body>
+  <div class="container">
+    <div class="box">this is me</div>
+
+  </div>
+  <div class="img"> <img src="KAMRAN.jpg"   alt="" width="30vw" height="30vh"></div>
+
+</body>
+</html>
